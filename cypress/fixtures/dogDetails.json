@@ -1,0 +1,10 @@
+[
+  {
+    "dogName": "Jimmy",
+    "dobKnownExact": true,
+    "dob": "20/10/2014",
+    "gender": "Male",
+    "breed": { "main": "Pedigree", "sub": "Labrador" },
+    "preExistingCondition": "No"
+  }
+]
