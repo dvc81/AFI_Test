@@ -17,6 +17,7 @@
   
 - **Refine Page Object Models (POMs):**
   - Depending on the scope and size of the suite, centralize the instantiation of POMs to enhance scalability and maintainability.
+  - implementation of helpers/shared base poms for components that are reused across multiple pages to remove duplication within Pooms - this would become more apparent when working on a wider set of pages rather than this specific flow - at the moment only the continue button is clearly a shared 'component' within this specific test requirement
   
   - **BDD:**
   - Not a neccessity but a consideration - If there is wider non-technical team involvement, consider implementing BDD to improve readability and team collaboration. If there is unlikely to be non-technical team involvement, this may add unnecessary complexity and overhead to test scripting. 

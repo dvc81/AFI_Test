@@ -91,11 +91,6 @@ class DateOfBirthPage extends QuoteBasePage {
     };
     return monthMap[monthIndex];
   }
-
-  clickContinue() {
-    this.continueButton.should('be.visible').click();
-    return this;
-  }
 }
 
 export default DateOfBirthPage;
