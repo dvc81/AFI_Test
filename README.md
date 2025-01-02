@@ -4,16 +4,23 @@
 
 - **Data Driven:** Utilizes fixtures, allowing for multiple test scenarios to be added simply.
 - **Page Object Models (POMs):** Employed for test maintainability and scalability. Selectors are centralized, and method logic is clearer, making test steps more readable. Since each click through the quote effectively navigated to a different page, I chose to organize these into a subfolder for a cleaner structure.
-- **Assertions:** The flow concluded after selecting a breed/sub breed, so the only assertion on that page is to check the URL. This can be expanded to include more detailed assertions on the page if the flow continues or if there's a specific use case to verify at the test's termination point. Utilize fluent assertion libraries where necessary to achieve this.
+- **Assertions:** The flow as requested in test instructions ended after selecting a breed/sub breed, so the only assertion on that page is to check the URL. This can be expanded to include more detailed assertions on the page if the flow continues or if there's a specific use case to verify at the test's termination point. Utilize fluent assertion libraries where necessary to achieve this.
 - **Linting and Formatting:** Basic linting setup and Prettier configuration were added, along with a pre-commit Husky hook to enforce code standards.
 
 ## **Additional Tasks and Improvements to Undertake**
 
+- **Cross browser Tests:**
+  - Current solution only tested in Chrome. Expand to other browsers - introduce parallelization for faster execution.
+
 - **Componentize Tests:**
-  - Test pages in isolation (ie edge, happy cases etc) rather than fully end-to-end (E2E). This would still leave the E2E flow intact but allow for some granular testing whilst balancing execution time.
+  - Test pages in isolation (ie edge, happy cases etc) rather than fully end-to-end (E2E). This would still leave the E2E flow intact but allow for some granular testing whilst balancing execution time. Inclusive of mocking where applicable. 
   
 - **Refine Page Object Models (POMs):**
   - Depending on the scope and size of the suite, centralize the instantiation of POMs to enhance scalability and maintainability.
+  
+  - **BDD:**
+  - Not a neccessity but a consideration - If there is wider non-technical team involvement, consider implementing BDD to improve readability and team collaboration. If there is unlikely to be non-technical team involvement, this may add unnecessary complexity and overhead to test scripting. 
+
   
 - **Review Using Application Actions alongside POM:**
   - Assess the scalability of incorporating application actions with POM.
